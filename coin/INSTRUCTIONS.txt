@@ -1,0 +1,14 @@
+This folder contains the source code of COIN.
+
+In order to use it uncompress the file unito.tar.gz under src of Freepastry 2 source code.
+Put the files run and interactive on Freepastry package root (where build.xml is)
+
+Then run on three different shells:
+(wait for each command to complete before running the next one)
+sh run new 9001
+sh run multi 4500 hostname 9001 30
+sh run join 9002 hostname 9001
+
+you can also use
+sh interactive
+to get an interactive invocation of the application

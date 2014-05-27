@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>unito.p2p</groupId>
+  <artifactId>coin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <contributors>
+  	<contributor>
+  		<name>Fabio Varesano</name>
+  		<roles>
+  			<role>Creator</role>
+  		</roles>
+  	</contributor>
+  	<contributor>
+  		<name>Osama Khalid</name>
+  	</contributor>
+  </contributors>
+  <dependencies>
+  	<dependency>
+  		<groupId>freepastry</groupId>
+  		<artifactId>freepastry</artifactId>
+  		<version>2.2_03</version>
+  	</dependency>
+  </dependencies>
+  <repositories>
+  	<repository>
+  		<id>PastryRepo</id>
+  		<url>http://www.mozartspaces.org/maven/</url>
+  	</repository>
+  </repositories>
+</project>

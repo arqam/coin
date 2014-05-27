@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>unito.p2p</groupId>
   <artifactId>coin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <contributors>
   	<contributor>
   		<name>Fabio Varesano</name>
@@ -20,11 +20,62 @@
   		<artifactId>freepastry</artifactId>
   		<version>2.2_03</version>
   	</dependency>
+  	<dependency>
+	    <groupId>xmlpull</groupId>
+	    <artifactId>xmlpull</artifactId>
+	    <version>1.1.3.4d_b4_min</version>
+    </dependency>
+    <dependency>
+        <groupId>xpp3</groupId>
+	    <artifactId>xpp3</artifactId>
+	    <version>1.1.4c</version>
+	</dependency>
+	<dependency>
+	    <groupId>commons-logging</groupId>
+	    <artifactId>commons-logging</artifactId>
+	    <version>1.1.3</version>
+	</dependency>
+	<dependency>
+	    <groupId>commons-jxpath</groupId>
+	    <artifactId>commons-jxpath</artifactId>
+	    <version>1.3</version>
+	</dependency>
+	<dependency>
+		<groupId>net.sbbi</groupId>
+		<artifactId>sbbi-upnplib</artifactId>
+		<version>1.0.4</version>
+	</dependency>
   </dependencies>
   <repositories>
   	<repository>
   		<id>PastryRepo</id>
   		<url>http://www.mozartspaces.org/maven/</url>
   	</repository>
+  	<repository>
+        <id>Nuiton</id>
+        <url>http://maven.nuiton.org/nexus/content/groups/releases/</url>
+  	</repository>
   </repositories>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <shadedArtifactAttached>true</shadedArtifactAttached>
+              <shadedClassifierName>shade</shadedClassifierName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

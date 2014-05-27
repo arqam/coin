@@ -1,6 +1,8 @@
 COIN: a distributed accounting system for peer to peer networks
 ===============================================================
 
+_A project by [**Fabio Varesano**](http://www.varesano.net/contents/projects/coin%20distributed%20accounting%20system%20peer%20peer%20networks)_
+
 This is the project I've created and developed for my Bachelor of Science degree at the Department of Computer Science of the University of Torino, Italy. During the project, mentored by Professor Giancarlo Ruffo, I worked on a decentralized accounting system for peer to peer networks.
 
 You can read a little introduction to the project where I analyze what are the goals of my project.
